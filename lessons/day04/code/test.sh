@@ -2,6 +2,7 @@
 
 BUCKET_NAME="terraform-state-$(date +%s)"
 REGION="us-east-1"
+export AWS_PROFILE="terraform-tutorial"
 
 # Create S3 bucket for state storage
 aws s3 mb s3://$BUCKET_NAME --region $REGION
